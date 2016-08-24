@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #fff;
+  color: #000;
+  font: 16px/1.5 'Helvetica', sans-serif;
+}
+
+.container {
+  padding: 2rem;
+}
+.btn {
+  background: #000;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}

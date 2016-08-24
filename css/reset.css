@@ -1,0 +1,55 @@
+/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code, em, img, small, strong, sub, sup,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend, label, input, textarea, select, button,
+table, caption, thead, tbody, tfoot, tr, th, td {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, audio, canvas, video {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: normal;
+}
+address, cite, code, em, strong {
+  font-style: normal;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse; 
+  border-spacing: 0;
+}
+input, textarea, select, button { 
+  display: block;
+  resize: none; 
+}
+img { 
+  display: block; 
+  max-width: 100%; 
+}
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body { 
+  height: 100%; 
+}
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
