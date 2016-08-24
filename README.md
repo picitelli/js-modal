@@ -47,12 +47,12 @@ Modal element markup example:
 </div>
 ```
 
-Outside of the modal, if using a button element to trigger the opening of the modal, define the trigger button and reference the `id` of the modal as the `data-trigger-modal` attribute value
+Outside of the modal, if using a button element to trigger the opening of the modal, define the trigger button and reference the `id` of the modal as the data-trigger-modal` attribute value
 ```html
 <button type="button" data-trigger-modal="modal-example">Trigger Example modal</button>
 ```
 
-In your JS, initialize an instance of a modal
+In your JS, initialize an instance of a modal and pass in a reference to the modal element
 
 ```js
 var modalEl = document.getElementById('modal-example');
@@ -60,7 +60,17 @@ var modalExample = new Modal(modalEl);
 modalExample.init();
 ```
 
-Click on the trigger button to open the modal
+Click on the trigger button to open the modal and that's all there is to it!
+
+Additionally, you can open and close a modal using the `openModal` and `closeModal` methods
+
+```js
+modalExample.openModal();
+```
+
+```js
+modalExample.closeModal();
+```
 
 ##Plugin options
 Option | Type | Default | Description
