@@ -24,12 +24,12 @@ Create a modal element in the document and specify an `id`
 </div>
 ```
 
-Create a button element within the modal that has a `data-close-modal` data attribute
+Create a button element within the modal that has a `data-close-modal` attribute
 ```html
 <button type="button" data-close-modal>Close modal</button>
 ```
 
-*Note: You can create as many close buttons within the modal as you like. Any element with a `data-close-modal` data attribute living inside the modal will trigger the closing of the modal when clicked.*
+*Note: You can create as many close buttons within the modal as you like. Any element with a `data-close-modal` attribute living inside the modal will trigger the closing of the modal when clicked.*
 
 Modal element markup example:
 ```html
@@ -61,3 +61,13 @@ modalExample.init();
 ```
 
 Click on the trigger button to open the modal
+
+##Plugin options
+Option | Type | Default | Description
+------ | ---- | ------- | -----------
+activeClass | string | 'modal--active' | Active class set to the modal when it opens
+bodyClass | string | 'modal-is-active' | Active class set to the body when the modal opens
+overlay | boolean | true | Enables the modal overlay
+overlayClass | string | 'modal__overlay' | Class for the modal overlay
+openCallback | function | null | Callback that fires after the modal opens
+closeCallback | function | null | Callback that fires after the modal closes
