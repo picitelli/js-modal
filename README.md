@@ -47,7 +47,7 @@ Modal element markup example:
 </div>
 ```
 
-Outside of the modal, if using a button element to trigger the opening of the modal, define the trigger button and reference the `id` of the modal as the data-trigger-modal` attribute value
+Outside of the modal, if using a button element to trigger the opening of the modal, define the trigger button and reference the `id` of the modal as the `data-trigger-modal` attribute value
 ```html
 <button type="button" data-trigger-modal="modal-example">Trigger Example modal</button>
 ```
