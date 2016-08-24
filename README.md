@@ -1,5 +1,63 @@
+#Javascript modal
 A simple CSS-driven vanilla Javascript modal plugin.
 
 - Lightweight, no dependencies
 - Customizable through CSS
 - Works in IE9 and up
+
+##Usage
+Reference the modal stylesheet in the document head
+
+```html
+<link rel="stylesheet" href="css/modal.css">
+```
+
+Reference the modal plugin before the body ends
+```html
+<script src="js/modal.js"></script>
+```
+
+Create a modal element in the document and specify an `id`
+```html
+<div class="modal" id="modal-example">
+  <div class="modal__window">...</div>
+</div>
+```
+
+Create a button element within the modal that has a `data-close-modal` data attribute
+```html
+<button type="button" data-close-modal>Close modal</button>
+```
+
+*Note: You can create as many close buttons within the modal as you like. Any element with a `data-close-modal` data attribute living inside the modal will trigger the closing of the modal when clicked.*
+
+Modal element markup example:
+```html
+<div class="modal" id="modal-example">
+  <div class="modal__window">
+    <button class="modal__close-btn" type="button" data-close-modal>X</button>
+    <div class="modal__header">
+       <h2 class="modal__title">Title of modal</h2>
+     </div>
+     <div class="modal__content">
+       <!-- Modal content -->
+       <button type="button" data-close-modal>Close modal</button>
+     </div>
+  </div>
+</div>
+```
+
+Outside of the modal, if using a button element to trigger the opening of the modal, define the trigger button and reference the `id` of the modal as the `data-trigger-modal` attribute value
+```html
+<button type="button" data-trigger-modal="modal-example">Trigger Example modal</button>
+```
+
+In your JS, initialize an instance of a modal
+
+```js
+var modalEl = document.getElementById('modal-example');
+var modalExample = new Modal(modalEl);
+modalExample.init();
+```
+
+Click on the trigger button to open the modal

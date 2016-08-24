@@ -55,7 +55,7 @@
     },
     this.opts = extend(this.defaults, opts);
 
-  }
+  };
   Modal.prototype  = {
 
     init: function() {
