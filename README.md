@@ -52,7 +52,7 @@ Outside of the modal, if using a button element to trigger the opening of the mo
 <button type="button" data-trigger-modal="modal-example">Trigger Example modal</button>
 ```
 
-In your JS, reference the modal element, pass it in as a reference and initialize an instance of the modal
+In your JS, reference the modal element, pass it in as an argument and initialize an instance of the modal
 
 ```js
 var modalEl = document.getElementById('modal-example');

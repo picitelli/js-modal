@@ -1,7 +1,9 @@
 (function() {
   'use strict';
 
-  // class name helpers
+  /**
+   * Class name helpers
+   */
   function classReg(cl) {
     return new RegExp('(\\s|^)'+ cl +'(\\s|$)');
   }
@@ -22,7 +24,9 @@
     }
   }
 
-  // extend helper
+  /**
+   * Extend helper
+   */
   function extend(obj1, obj2) {
     var obj = {};
     for (var key in obj1) {
@@ -53,6 +57,7 @@
       openCallback: null, // callback for when modal opens
       closeCallback: null // callack for when modal closes
     },
+    opts = opts || {},
     this.opts = extend(this.defaults, opts);
 
   };
