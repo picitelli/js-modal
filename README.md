@@ -1,11 +1,11 @@
-#Javascript modal
+# Javascript modal
 A simple CSS-driven vanilla Javascript modal plugin.
 
 - Lightweight, no dependencies
 - Customizable through CSS
 - Works in IE9 and up
 
-##Usage
+## Usage
 Reference the modal stylesheet in the document head
 
 ```html
@@ -54,7 +54,7 @@ Outside of the modal, if using a button element to trigger the opening of the mo
 
 In your JS, reference the modal element, pass it in as an argument and initialize an instance of the modal
 
-```js
+```javascript
 var modalEl = document.getElementById('modal-example');
 var modalExample = new Modal(modalEl);
 modalExample.init();
@@ -64,17 +64,17 @@ Click on the trigger button to open the modal and that's all there is to it!
 
 Additionally, you can open and close a modal using the `openModal` and `closeModal` methods
 
-```js
+```javascript
 modalExample.openModal();
 ```
 
-```js
+```javascript
 modalExample.closeModal();
 ```
 
-##Plugin options
+## Plugin options
 Option | Type | Default | Description
------- | ---- | ------- | -----------
+--- | --- | --- | ---
 activeClass | string | 'modal--active' | Active class set to the modal when it opens
 bodyClass | string | 'modal-is-active' | Active class set to the body when the modal opens
 overlay | boolean | true | Enables the modal overlay
